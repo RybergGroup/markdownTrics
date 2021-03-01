@@ -1,4 +1,5 @@
 # markdownTrics
+images in beamer presentations can be resized with eg \!\[\]\(img/file.jpg\){width=50%}.
 
 ## ImageMagic for working with images
 To change print size of image without changing number of pixels:
