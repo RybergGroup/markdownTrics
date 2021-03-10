@@ -1,4 +1,10 @@
-# markdownTrics
+# markdownTrics (mostly using pandoc)
+
+## HTML
+Use -c to add a css (e.g. notes.css) file and -s to make the output file self contained.
+
+
+## Beamer
 images in beamer presentations can be resized with eg \!\[\]\(img/file.jpg\){width=50%}.
 
 ## ImageMagic for working with images
