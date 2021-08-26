@@ -21,6 +21,23 @@ theme: Singapore
 
 Images in beamer presentations can be resized with eg \!\[\]\(img/file.jpg\){width=50%}.
 
+### Columns
+```
+::::::::::::::::{.columns}
+:::::{.column width=60%}
++
++
++
+:::::::
+:::::::{.column width=40%}
+![](img/graph1.png)
+
+![](img/graph2.png)
+:::::::
+:::::::::::::::::::
+
+```
+
 ## ImageMagic for working with images
 To change print size of image without changing number of pixels:
 
