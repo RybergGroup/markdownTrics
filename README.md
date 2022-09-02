@@ -45,7 +45,6 @@ It may be nice to put the commands into a Makefile and render the fil/s using ma
 BUILDDIR=build
 FILENAMEBASE=presentation
 CSS=../slides.css
-#THEME=Copenhagen
 
 slidy: $(FILENAMEBASE).md
 	mkdir $(BUILDDIR) -p 
