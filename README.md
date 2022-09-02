@@ -38,6 +38,25 @@ Images in beamer presentations can be resized with eg \!\[\]\(img/file.jpg\){wid
 
 ```
 
+## Make
+It may be nice to put the commands into a Makefile and render the fil/s using make as it my be run many times during the development of a document/or whatever. A Makefile can look something like this for a slidy presentation:
+
+```
+BUILDDIR=build
+FILENAMEBASE=presentation
+CSS=../slides.css
+#THEME=Copenhagen
+
+slidy: $(FILENAMEBASE).md
+	mkdir $(BUILDDIR) -p 
+	pandoc -t slidy $(FILENAMEBASE).md \
+	-o $(BUILDDIR)/$(FILENAMEBASE).html \
+	-s --self-contained \
+	-c $(CSS)
+  
+```
+This will create a folder build (if it does not exist) and generate the presentation there based on the markdown file and a css file.
+
 ## ImageMagic for working with images
 To change print size of image without changing number of pixels:
 
