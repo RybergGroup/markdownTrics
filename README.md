@@ -19,7 +19,10 @@ theme: Singapore
 ---
 ```
 
-Images in beamer presentations can be resized with eg \!\[\]\(img/file.jpg\){width=50%}.
+Images in beamer presentations can be resized with eg 
+```
+![](img/file.jpg){width=50%}.
+```
 
 ### Columns
 ```
