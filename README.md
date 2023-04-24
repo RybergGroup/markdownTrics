@@ -5,7 +5,7 @@ These are basically privat notes made public.
 Use -c to add a css (e.g. notes.css) file and -s to make the output file self contained.
 
 ## Beamer
-A good sourse of tips and tricks can be found ![here](https://github.com/alexeygumirov/pandoc-beamer-how-to) and a guide to beamer colors (beamecolor) and themes (theme) can be found ![here](https://deic.uab.cat/~iblanes/beamer_gallery/index.html).
+A good sourse of tips and tricks can be found [here](https://github.com/alexeygumirov/pandoc-beamer-how-to) and a guide to beamer colors (beamecolor) and themes (theme) can be found [here](https://deic.uab.cat/~iblanes/beamer_gallery/index.html).
 
 The pandoc command to make a beamer presentation is:
 
