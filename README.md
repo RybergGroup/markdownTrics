@@ -61,6 +61,19 @@ slidy: $(FILENAMEBASE).md
 ```
 This will create a folder build (if it does not exist) and generate the presentation there based on the markdown file and a css file.
 
+Or like this for an application or report:
+
+```
+forskningsplan.pdf: forskningsplan.md
+	pandoc -o forskningsplan.pdf \
+	--pdf-engine xelatex \
+	-F pandoc-citeproc \
+	-V 'mainfont:Arial' \
+	-V 'mainfontoptions:Extension=.ttf, UprightFont=*, BoldFont=*_Bold, ItalicFont=*_Italic, BoldItalicFont=*_Bold_Italic' \
+	-V 'fontsize=11pt' \
+	forskningsplan.md
+```
+
 ## ImageMagic for working with images
 To change print size of image without changing number of pixels:
 
